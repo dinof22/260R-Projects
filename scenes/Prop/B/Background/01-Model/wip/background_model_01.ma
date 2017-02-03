@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: background_model_01.ma
-//Last modified: Thu, Feb 02, 2017 05:19:15 PM
+//Last modified: Thu, Feb 02, 2017 06:08:14 PM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "720C67F1-4625-2B98-9B32-F09AEB9B742C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 8.3866477162957569 5.0387626047273706 8.0245274348134927 ;
-	setAttr ".r" -type "double3" -11.138352730467725 -1037.3999999995901 -1.0802089619487549e-015 ;
+	setAttr ".t" -type "double3" 3.1688411081088201 5.7257608374293731 11.200880035684676 ;
+	setAttr ".r" -type "double3" -11.138352730485186 -1060.9999999995543 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1A8607D1-4818-739B-29F7-E59323CEA2FA";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 12.643424807201328;
+	setAttr ".coi" 12.643424807201493;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
